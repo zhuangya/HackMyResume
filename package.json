@@ -56,7 +56,8 @@
     "underscore": "^1.8.3",
     "wkhtmltopdf": "^0.1.5",
     "xml-escape": "^1.0.0",
-    "yamljs": "^0.2.4"
+    "yamljs": "^0.2.4",
+    "snyk": "^1.47.0"
   },
   "devDependencies": {
     "chai": "*",
@@ -68,5 +69,10 @@
     "jane-q-fullstacker": "fluentdesk/jane-q-fullstacker",
     "mocha": "*",
     "resample": "fluentdesk/resample"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
